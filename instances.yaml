@@ -25,16 +25,34 @@ unauthorized_message: "Este launcher no está disponible en este momento. Contac
 instances:
   - id: "uhcwebones2"                # identificador único, no cambia
     name: "uhcwebones2"              # nombre visible (editable)
-    icon: "https://raw.githubusercontent.com/likn5649-alt/Euphonic-Launcher/refs/heads/main/image.png"
+    icon: ""
     background: "https://raw.githubusercontent.com/likn5649-alt/Euphonic-Launcher/refs/heads/main/image.png"
     # Link de descarga directa de Dropbox. IMPORTANTE: debe terminar
     # en "?dl=1" (no "?dl=0") para que descargue el archivo directo.
     zip_url: "https://www.dropbox.com/scl/fi/eh12mkbjtxe9l1jt3sask/eufonia-minecraft1.zip?rlkey=6tzyfm236fsoz37bfzinm0wel&st=xzh7iegz&dl=1"
-    # Opcional: si tu zip trae un .bat/.exe/.jar que hay que ejecutar
-    # para "jugar", pon la ruta relativa dentro de la carpeta
-    # extraída. Si lo dejas vacío, el botón PLAY solo descarga y
-    # abre la carpeta de la instancia.
+
+    # ---- Lanzar Minecraft directamente al terminar de instalar ----
+    # Poniendo minecraft_version, al tocar PLAY el launcher ejecuta
+    # Minecraft usando la carpeta que está dentro de "versions/" del
+    # zip extraído (igual que hace el launcher oficial), en vez de
+    # abrir la carpeta.
+    minecraft_version: "1.19.4"
+    # Opcional: nombre EXACTO de la carpeta dentro de "versions/"
+    # (la que trae el .json y el .jar de Fabric/Forge). Si lo dejas
+    # vacío, el launcher detecta automáticamente la única carpeta que
+    # haya ahí, o la que tenga "fabric"/"forge"/"quilt" en el nombre.
+    # Ejemplo real: "fabric-loader-0.16.14-1.19.4"
+    version_id: "fabric-loader-0.16.14-1.19.4"
+    # Opcional: solo si tu zip trae su propio Java portable en vez de
+    # usar el instalado en el sistema (ruta relativa al .exe/javaw.exe
+    # dentro de la carpeta ya extraída).
+    java_path: ""
+
+    # Alternativa a lo anterior: si en lugar de lanzar Minecraft
+    # querés correr un .bat/.exe propio, usa "executable" (tiene
+    # prioridad sobre minecraft_version).
     executable: ""
+
     # Opcional: pon false para desactivar SOLO esta instancia
     # (sigue apareciendo en la lista pero no se puede jugar).
     authorized: true
@@ -45,4 +63,4 @@ instances:
     background: "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/assets/torneo_bg.png"
     zip_url: "https://www.dropbox.com/scl/fi/yyyyyyyyyyyyyyyyy/torneo.zip?rlkey=yyyyyyyyyyyyyyyyy&dl=1"
     executable: ""
-    authorized: true
+    authorized: false
