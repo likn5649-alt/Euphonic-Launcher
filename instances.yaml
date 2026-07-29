@@ -12,7 +12,7 @@ launcher_name: "Euphonic Launcher"
 instances_folder: "Instancias"
 
 # INTERRUPTOR GENERAL. Si es false (o si este archivo no se
-# puede leer / no existe), el launcher completo queda bloqueado
+# puede leer / no existe), el launcher completo queda bloqueado 
 # y se muestra unauthorized_message.
 authorized: true
 
@@ -57,11 +57,11 @@ instances:
     # (sigue apareciendo en la lista pero no se puede jugar).
     authorized: true
 
-  - id: "uhcwebones2"
-    name: "uhcwebones2"
+  - id: "SandBox1.19.4"
+    name: "SandBox1.19.4"
     icon: "https://raw.githubusercontent.com/likn5649-alt/Euphonic-Launcher/refs/heads/main/image1.png"
     background: "https://raw.githubusercontent.com/likn5649-alt/Euphonic-Launcher/refs/heads/main/image1.png"
-    zip_url: "https://www.dropbox.com/scl/fi/8vplf3su1o2a3jb33ote0/instance.zip?rlkey=yqdhc35nqvadqqgqrt828rxm5&st=t67fghc1&dl=1"
+    zip_url: "https://www.dropbox.com/scl/fi/uje9rx0w9hrqo9n6giy1x/Sandbox-1.19.4.zip?rlkey=r6bhr5z0hi151o44zlumm945o&st=yrxzasnh&dl=1"
     executable: ""
     authorized: true
     minecraft_version: "1.19.4"
