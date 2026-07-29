@@ -14,7 +14,7 @@ instances_folder: "Instancias"
 # INTERRUPTOR GENERAL. Si es false (o si este archivo no se
 # puede leer / no existe), el launcher completo queda bloqueado
 # y se muestra unauthorized_message.
-authorized: true
+authorized: false
 
 # Mensaje que se muestra si authorized = false o si no se pudo
 # leer el YAML.
