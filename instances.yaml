@@ -1,0 +1,48 @@
+# =============================================================
+#  instances.yaml — sube este archivo a un repo de GitHub y usa
+#  el link "raw" en launcher.config.json (configUrl)
+# =============================================================
+
+# Nombre del launcher. Se usa para crear la carpeta en:
+#   %APPDATA%/<launcher_name>/
+launcher_name: "Euphonic Launcher"
+
+# Nombre de la subcarpeta donde se guardan las instancias.
+# Resultado: %APPDATA%/<launcher_name>/<instances_folder>/<nombre_instancia>/
+instances_folder: "Instancias"
+
+# INTERRUPTOR GENERAL. Si es false (o si este archivo no se
+# puede leer / no existe), el launcher completo queda bloqueado
+# y se muestra unauthorized_message.
+authorized: false
+
+# Mensaje que se muestra si authorized = false o si no se pudo
+# leer el YAML.
+unauthorized_message: "Este launcher no está disponible en este momento. Contacta al staff del evento."
+
+# Lista de instancias. Puedes agregar tantas como quieras: van a
+# aparecer una al lado de otra en la pantalla de inicio.
+instances:
+  - id: "uhcwebones2"                # identificador único, no cambia
+    name: "uhcwebones2"              # nombre visible (editable)
+    icon: "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/assets/uhcwebones2_icon.png"
+    background: "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/assets/uhcwebones2_bg.png"
+    # Link de descarga directa de Dropbox. IMPORTANTE: debe terminar
+    # en "?dl=1" (no "?dl=0") para que descargue el archivo directo.
+    zip_url: "https://www.dropbox.com/scl/fi/xxxxxxxxxxxxxxxxx/uhcwebones2.zip?rlkey=xxxxxxxxxxxxxxxxx&dl=1"
+    # Opcional: si tu zip trae un .bat/.exe/.jar que hay que ejecutar
+    # para "jugar", pon la ruta relativa dentro de la carpeta
+    # extraída. Si lo dejas vacío, el botón PLAY solo descarga y
+    # abre la carpeta de la instancia.
+    executable: ""
+    # Opcional: pon false para desactivar SOLO esta instancia
+    # (sigue apareciendo en la lista pero no se puede jugar).
+    authorized: true
+
+  - id: "otro_evento"
+    name: "Torneo de Verano"
+    icon: "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/assets/torneo_icon.png"
+    background: "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/assets/torneo_bg.png"
+    zip_url: "https://www.dropbox.com/scl/fi/yyyyyyyyyyyyyyyyy/torneo.zip?rlkey=yyyyyyyyyyyyyyyyy&dl=1"
+    executable: ""
+    authorized: true
