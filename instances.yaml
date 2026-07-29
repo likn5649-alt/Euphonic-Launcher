@@ -23,10 +23,10 @@ unauthorized_message: "Este launcher no está disponible en este momento. Contac
 # Lista de instancias. Puedes agregar tantas como quieras: van a
 # aparecer una al lado de otra en la pantalla de inicio.
 instances:
-  - id: "uhcwebones2"                # identificador único, no cambia
-    name: "uhcwebones2"              # nombre visible (editable)
+  - id: "thebackrooms2"                # identificador único, no cambia
+    name: "thebackrooms2"              # nombre visible (editable)
     icon: "https://raw.githubusercontent.com/likn5649-alt/Euphonic-Launcher/refs/heads/main/image.png"
-    background: "https://raw.githubusercontent.com/likn5649-alt/Euphonic-Launcher/refs/heads/main/image.png"
+    background: "https://eufonia.studio/cdn-cgi/image/width=1920,quality=75,format=auto/_next/static/media/01_backrooms2.e544faf8.png"
     # Link de descarga directa de Dropbox. IMPORTANTE: debe terminar
     # en "?dl=1" (no "?dl=0") para que descargue el archivo directo.
     zip_url: "https://www.dropbox.com/scl/fi/eh12mkbjtxe9l1jt3sask/eufonia-minecraft1.zip?rlkey=6tzyfm236fsoz37bfzinm0wel&st=xzh7iegz&dl=1"
