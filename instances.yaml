@@ -25,7 +25,7 @@ unauthorized_message: "Este launcher no está disponible en este momento. Contac
 instances:
   - id: "uhcwebones2"                # identificador único, no cambia
     name: "uhcwebones2"              # nombre visible (editable)
-    icon: ""
+    icon: "https://raw.githubusercontent.com/likn5649-alt/Euphonic-Launcher/refs/heads/main/image.png"
     background: "https://raw.githubusercontent.com/likn5649-alt/Euphonic-Launcher/refs/heads/main/image.png"
     # Link de descarga directa de Dropbox. IMPORTANTE: debe terminar
     # en "?dl=1" (no "?dl=0") para que descargue el archivo directo.
